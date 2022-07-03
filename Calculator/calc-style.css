@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+#MyResponsiveImage {
+    background-color: #000;
+    backround-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url("https://w.wallhaven.cc/full/4o/wallhaven-4odj7n.png");
+}
+
+@media screen and (orientation: portrait) {
+  #MyResponsiveImage {
+    background-image: url("https://i.imgur.com/RdTX3Um.png");
+    
+    background-image: 
+      image-set(
+        url("https://i.imgur.com/RdTX3Um.png") 1x, 
+        url("https://i.imgur.com/ZQUL5TJ.png") 2x
+      );
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #MyResponsiveImage {
+    background-image: url("https://i.imgur.com/0AwngTL.png");
+    
+    background-image: 
+      image-set(
+        url("https://i.imgur.com/0AwngTL.png") 1x, 
+        url("https://i.imgur.com/ffMC8QH.png") 2x
+      );
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #MyResponsiveImage {
+    background-image: url("https://i.imgur.com/AQtk5bI.png");
+    
+    background-image: 
+      image-set(
+        url("https://i.imgur.com/AQtk5bI.png") 1x, 
+        url("https://i.imgur.com/5kwvY1w.png") 2x
+      );
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+  #MyResponsiveImage {
+    background-image: url("https://i.imgur.com/K52vJpo.png");
+    
+    background-image: 
+      image-set(
+        url("https://i.imgur.com/K52vJpo.png") 1x, 
+        url("https://i.imgur.com/Yc5tHX2.png") 2x
+      );
+  }
+}
+
+html, body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+#MyResponsiveImage {
+    padding: 100px 40px;
+    color: #FFC317;
+    text-shadow: 0px 5px 5px #49002D;
+    font-size: 256%;
+    text-align: center;
+}
+body {
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: #FFFFFF;
+}
+
+
+.calculator {
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #2C2C2C;
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+    background-color: #A5BBC1;
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {}
+
+.operators {}
+
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #FFC317;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operators div:hover {
+    background-color: #FFEDBC;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+}
+
+.operators div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #C2C2C2;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numbers div:hover {
+    background-color: #FFC317;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.equal {
+    display: inline-block;
+    border: 1px solid #79004B;
+    border-radius: 5px;
+    width: 15%;
+    text-align: center;
+    padding: 122px 8px;
+    margin: 10px 6px 10px 1px;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #B90575;
+    transition: all .2s ease-in-out;
+}
+
+div.equal:hover {
+    background-color: #79004B;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #B90575;
+}
+
+div.equal:active {
+  font-weight: bold;
+}

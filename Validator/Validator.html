@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Form Validation</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+   <script>var __adobewebfontsappname__="dreamweaver"</script>
+   <script src="http://use.edgefonts.net/kristi:n4:default;cherry-cream-soda:n4:default;aguafina-script:n4:default;julee:n4:default.js" type="text/javascript"></script>
+
+   </head>
+   <body>
+	   <style>
+body {
+  background-image: url('https://i.imgur.com/lu6uR7A.jpg');
+}
+</style>
+      <form action = "" name = "myForm" onsubmit = "return(validate());">
+        <h2 align="center" style="font-family: julee; font-style: normal; font-weight: 400; color: #000000;">Be A Good Human. Fill Out The Form.&nbsp;</h2>
+<table align="center" cellspacing = "7" cellpadding = "10" border = "3" style="border-radius: 20px;" >
+     <tr>
+               <td align = "right">Name</td>
+       <td><input type = "text" name = "name" style="border-radius: 20px;"/></td>
+            </tr>
+            <tr>
+               <td align = "right">E-mail</td>
+               <td><input type = "text" name = "email" style="border-radius: 20px;"/></td>
+            </tr>
+            <tr>
+               <td align = "right">Phone Number</td>
+               <td><input type = "text" name = "phone" style="border-radius: 20px;"/></td>
+            </tr>
+            <tr>
+               <td align = "right">Subject</td>
+               <td>
+                  <select name = "subject" class="drop_down" style="border-radius: 20px;" >
+                     <option value = "0" selected>Select</option>
+                     <option value = "1">HTML</option>
+                     <option value = "2">JavaScript</option>
+                     <option value = "3">CSS</option>
+                     <option value = "4">JSP</option>
+                  </select>
+               </td>
+            </tr>
+         </table>
+         <p id="demo" style="color:red; text-align:center"></p>
+   <div style="text-align:center"><input type = "submit" value = "Submit" style="border-radius: 20px;"/></div>
+      </form>
+   </body>

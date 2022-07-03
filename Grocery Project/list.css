@@ -1,0 +1,75 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    align-items: middle;
+    background: url(https://i.imgur.com/IwR0kD7.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+form {
+    color: #FFC317;
+    font-size: 22px;
+}
+
+input[type="text"]{
+  background-color : #f8f8f8;
+}
+
+#addNeed {
+  background-color : #f8f8f8;
+  color: #B90575;
+}
+
+#addHave {
+  background-color : #f8f8f8;
+  color: #B90575;
+}
+
+h1 {
+    color: #FFC317;
+    font-size: 50px;
+}
+
+h2 {
+    color: #FFC317;
+    font-size: 42px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+.list {
+    color: #555;
+    font-size: 22px;
+    padding: 0 !important;
+    width: 500px;
+	list-style: none;
+}
+.list li {
+    background-color : rgba(166,0,103,0.38);
+    border-color: #B90575;
+    border-style: solid;
+    border-width: thin thin thin thin;
+    text-indent: 5px;
+    text-align: left;
+    height: auto;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #FFC317;
+}
+li a {
+    float: right;
+    text-decoration: none;
+    color: rgba(231,6,6,1.00);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), /* Webkit-based browsers */
+       (min--moz-device-pixel-ratio: 2),    /* Older Firefox browsers (prior to Firefox 16) */
+       (min-resolution: 2dppx),             /* The standard way */
+       (min-resolution: 192dpi)             /* dppx fallback */
+{}
